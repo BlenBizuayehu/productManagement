@@ -9,6 +9,10 @@ const productSchema=mongoose.Schema({
     price:{
         type:Number,
         required:true
+    },
+    quantity:{
+        type:Number,
+        required:true
     }
 });
 const product=mongoose.model("Product",productSchema);
